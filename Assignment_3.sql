@@ -1,4 +1,4 @@
-1. Create an ‘Orders’ table which comprises of these columns – ‘order_id’, ‘order_date’, ‘amount’, ‘customer_id’
+-- 1. Create an â€˜Ordersâ€™ table which comprises of these columns â€“ â€˜order_idâ€™, â€˜order_dateâ€™, â€˜amountâ€™, â€˜customer_idâ€™
 
 create table orders(
 	order_id varchar(10),
@@ -12,7 +12,7 @@ insert into orders values('20','2021-01-01','80','10'),
 						('50','2021-02-25','50','30');
 
 
-2. Make an inner join on ‘Customer’ & ‘Order’ tables on the ‘customer_id’ column 
+-- 2. Make an inner join on â€˜Customerâ€™ & â€˜Orderâ€™ tables on the â€˜customer_idâ€™ column 
 
 select cd.customer_id,
 	Order_id,
@@ -24,7 +24,7 @@ Orders o on cd.customer_id = o.order_id
 
 
 
-3. Make left and right joins on ‘Customer’ & ‘Order’ tables on the ‘customer_id’ column
+-- 3. Make left and right joins on â€˜Customerâ€™ & â€˜Orderâ€™ tables on the â€˜customer_idâ€™ column
 
 --Left Join
 select
@@ -48,7 +48,7 @@ Orders o on cd.customer_id = o.customer_id
 
 
 
-4. Update the ‘Orders’ table, set the amount to be 100 where ‘customer_id’ is 3
+4. Update the â€˜Ordersâ€™ table, set the amount to be 100 where â€˜customer_idâ€™ is 3
 
 update Orders
 	set amount = 100 
